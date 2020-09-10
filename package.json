@@ -1,0 +1,14 @@
+{
+  "name": "node-demo",
+  "version": "1.0.0",
+  "description": "demo code for medly BE working group",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Austin Ruby",
+  "license": "ISC",
+  "dependencies": {
+    "workerpool": "^6.0.0"
+  }
+}
