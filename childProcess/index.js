@@ -10,8 +10,6 @@ const useForkedFibonacci = (n) => {
   fibonacciProcess.on('message', (result) => {
     console.log(`The ${n}th Fibonacci number is ${result}`);
   });
-
-  console.log('main thread of execution continues');
 }
 
 const doOtherStuff = () => {

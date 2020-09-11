@@ -1,6 +1,6 @@
 // receive message from master process
 process.on('message', (data) => {
-  console.log('child process received message');
+  console.log('child process received message with data:', data);
 
   const fibonacci = (n) => {
     if (n <= 1) return n;

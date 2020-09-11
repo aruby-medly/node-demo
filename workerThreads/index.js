@@ -4,6 +4,7 @@ const runService = (workerData) => {
   return new Promise((resolve, reject) => {
     const worker = new Worker(`${__dirname}/myWorker.js`, { workerData }); // * NOTE: workerData is cloned, not in any shared memory
     worker.on('message', resolve);
+    // worker.on('message', (result) => console.log(`The ${workerData}th Fibonacci number is ${result}`));
     worker.on('error', reject);
     worker.on('exit', (code) => {
       if (code !== 0) {
